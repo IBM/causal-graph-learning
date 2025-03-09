@@ -19,7 +19,7 @@ This repository contains the code and the data used for the experiments in the p
 
 ## Installation:
 * Install the following python packages: numpy, networkx, scipy.
-* Install IBM ILOG CPLEX and setup the python interface.
+* Install [IBM ILOG CPLEX](https://www.ibm.com/products/ilog-cplex-optimization-studio) and setup the python interface.
 
 
 ## How to run code to learn graph:
@@ -82,7 +82,7 @@ where:\
 `max_parent_set_size_1` = maximum number of nodes in the parent set of the node in the one-node district\
 `max_parent_set_size_2` = maximum number of nodes in the parent set of each node in the district (district with 2 or more nodes)\
 `data_directory` = the directory where the sample_file_name exists and where the pickle file with the c-components and scores will be written\
-The output file will have the following name: *score_sample_file_name-csX-spsY-ocpsZ.pkl*, where *X* is max_district_size, *Y* is `max_parent_set_size_1`, and *Z* is `max_parent_set_size_2`.
+The output file will have the following name: *score_sample_file_name-csX-spsY-ocpsZ.pkl*, where *X* is `max_district_size`, *Y* is `max_parent_set_size_1`, and *Z* is `max_parent_set_size_2`.
 
 
 Example:\
