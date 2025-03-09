@@ -28,8 +28,8 @@ where:\
 `score_file_name.pkl` = file with input c-components and corresponding scores,\
 `path_input_directory/` = path to the directory where `score_file_name.pkl` resides,\
 `path_output_directory/` = path to the directory where the output is written,\
-`heuristics` = string that can be any combination of the letters a, b, c (i.e., a, b, c, ab, ac, bc, abc); a corresponds to operation (1) in the paper, b corresponds to operation (2) in the paper, and c corresponds to operation (3) in the paper,\
-`cuts` = string that can be any combination of the letters *a*, *b*, *c* (i.e., *a*, *b*, *c*, *ab*, *ac*, *bc*, *abc*); *a* corresponds to theorem 3.2 in the paper applied to a 3-node graph and the set S being a pair of nodes, *b* corresponds to theorem 3.2 in the paper applied to a 3-node graph and the set S being the 3 nodes, and *c* corresponds to theorem 3.3 in the paper applied to a 3-node graph and the set S being the 3 nodes,\
+`heuristics` = string that can be any combination of the letters *a*, *b*, *c* (i.e., *a*, *b*, *c*, *ab*, *ac*, *bc*, *abc*); *a* corresponds to operation (1) in the paper, *b* corresponds to operation (2) in the paper, and *c* corresponds to operation (3) in the paper,\
+`cuts` = string that can be any combination of the letters *a*, *b*, *c* (i.e., *a*, *b*, *c*, *ab*, *ac*, *bc*, *abc*); *a* corresponds to theorem 3.2 in the paper applied to a 3-node graph and the set *S* being a pair of nodes, *b* corresponds to theorem 3.2 in the paper applied to a 3-node graph and the set *S* being the 3 nodes, and *c* corresponds to theorem 3.3 in the paper applied to a 3-node graph and the set S being the 3 nodes,\
 `MIP_time_limit_(seconds)` = integer with the time limit for the MIP,\
 `type_of_graph_desired` = either *aadmg*, *arid*, or *bowfree*.
 
@@ -86,7 +86,7 @@ The output file will have the following name: *score_sample_file_name-csX-spsY-o
 
 
 Example:\
-`python3 generate_ccomponents.py sample_graph_random_bowfree_10nodes-1.txt 2 3 2 ../data/test/`
+`python3 generate_ccomponents.py sample_graph_random_bowfree_10nodes-0.txt 2 3 1 ../data/test/`
 
 
 ## How to compute the total score of a graph and the scores of the individual c-components:

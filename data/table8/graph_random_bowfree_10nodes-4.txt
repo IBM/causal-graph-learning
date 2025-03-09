@@ -1,0 +1,23 @@
+n_nodes n_directed n_bidirected
+10 9 10
+directed
+0 4
+0 8
+0 9
+1 4
+1 5
+2 4
+2 7
+2 9
+5 7
+bidirected
+0 3
+0 5
+0 6
+1 2
+1 3
+1 6
+2 8
+3 7
+5 9
+6 8
